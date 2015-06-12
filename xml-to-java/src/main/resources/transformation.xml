@@ -2,6 +2,9 @@
 <mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
     <configuration>
         <wildcard>false</wildcard>
+        <variables>
+            <variable name="ORIGIN">ORIGIN</variable>
+        </variables>
     </configuration>
     <mapping>
         <class-a>abcorder.ABCOrder</class-a>
