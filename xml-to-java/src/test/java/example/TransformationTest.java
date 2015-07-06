@@ -32,7 +32,6 @@ public class TransformationTest extends CamelSpringTestSupport {
                 from("direct:xml2java-test-input")
                     .log("Before transformation:\n ${body}")
                     .to("ref:xml2java")
-                    //.log("After transformation:\n custId:${body.custId}\n priority:${body.priority)\n orderId:${body.orderId}\n origin:${body.origin}\n approvalCode:${body.approvalCode}\n lineItems:${body.lineItems}")
                     .log("After transformation:\n custId:${body.custId}\n priority:${body.priority}\n orderId:${body.orderId}\n origin:${body.origin}\n approvalCode:${body.approvalCode}\n lineItems:${body.lineItems}")
                     .to("mock:xml2java-test-output");
             }
