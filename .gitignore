@@ -1,0 +1,12 @@
+target/
+generated_content
+.settings
+.classpath
+.project
+.DS_Store
+.xml
+*.zip
+*.html
+*~
+*.class
+*.log
