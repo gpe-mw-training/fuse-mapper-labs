@@ -52,7 +52,7 @@
     <mapping>
         <class-a>org.apache.camel.component.dozer.ExpressionMapper</class-a>
         <class-b>xyzorder.XyzOrder</class-b>
-        <field custom-converter-id="_expressionMapping" custom-converter-param="header:approval">
+        <field custom-converter-id="_expressionMapping" custom-converter-param="header:approval-code">
             <a>expression</a>
             <b>approvalCode</b>
         </field>
