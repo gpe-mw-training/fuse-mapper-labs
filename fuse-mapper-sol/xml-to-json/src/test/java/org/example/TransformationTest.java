@@ -35,7 +35,7 @@ public class TransformationTest extends CamelSpringTestSupport {
         resultEndpoint.expectedBodiesReceived(jsonUnprettyPrint(readFile("src/data/xyz-order.json")));
 
         // run test
-        startEndpoint.sendBodyAndHeader(readFile("src/data/abc-order.xml"), "approval", "AUTO");
+        startEndpoint.sendBodyAndHeader(readFile("src/data/abc-order.xml"), "approval-code", "AUTO");
 
         // verify results
         resultEndpoint.assertIsSatisfied();

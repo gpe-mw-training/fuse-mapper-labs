@@ -10,7 +10,7 @@
   </dataFormats>
   <route>
     <from uri="file:src/data?fileName=abc-order.xml&amp;noop=true"/>
-    <setHeader headerName="approval">
+    <setHeader headerName="approval-code">
       <constant>AUTO</constant>
     </setHeader>
     <to ref="xml2json"/>
